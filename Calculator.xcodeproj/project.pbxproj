@@ -13,6 +13,7 @@
 		126E038F273BA0C300EE89BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 126E038D273BA0C300EE89BC /* Main.storyboard */; };
 		126E0391273BA0C700EE89BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 126E0390273BA0C700EE89BC /* Assets.xcassets */; };
 		126E0394273BA0C700EE89BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 126E0392273BA0C700EE89BC /* LaunchScreen.storyboard */; };
+		127600EA274E1A6000F32244 /* CalculatorLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127600E9274E1A6000F32244 /* CalculatorLogic.swift */; };
 		C5509658AA048DAD6FB47F0A /* Pods_Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FF8D8099AB8A42FC1217823 /* Pods_Calculator.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		126E0390273BA0C700EE89BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		126E0393273BA0C700EE89BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		126E0395273BA0C700EE89BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		127600E9274E1A6000F32244 /* CalculatorLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorLogic.swift; sourceTree = "<group>"; };
 		521FBEF2F7F9F2107A71AB01 /* Pods-Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calculator.release.xcconfig"; path = "Target Support Files/Pods-Calculator/Pods-Calculator.release.xcconfig"; sourceTree = "<group>"; };
 		5FF8D8099AB8A42FC1217823 /* Pods_Calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BDA269AD7874BE363DD5B29 /* Pods-Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calculator.debug.xcconfig"; path = "Target Support Files/Pods-Calculator/Pods-Calculator.debug.xcconfig"; sourceTree = "<group>"; };
@@ -65,13 +67,38 @@
 			children = (
 				126E0387273BA0C300EE89BC /* AppDelegate.swift */,
 				126E0389273BA0C300EE89BC /* SceneDelegate.swift */,
-				126E038B273BA0C300EE89BC /* ViewController.swift */,
-				126E038D273BA0C300EE89BC /* Main.storyboard */,
+				127600EC274E1A7D00F32244 /* Model */,
+				127600ED274E1AC500F32244 /* Controller */,
+				127600EB274E1A7300F32244 /* View */,
 				126E0390273BA0C700EE89BC /* Assets.xcassets */,
 				126E0392273BA0C700EE89BC /* LaunchScreen.storyboard */,
 				126E0395273BA0C700EE89BC /* Info.plist */,
 			);
 			path = Calculator;
+			sourceTree = "<group>";
+		};
+		127600EB274E1A7300F32244 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				126E038D273BA0C300EE89BC /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		127600EC274E1A7D00F32244 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				127600E9274E1A6000F32244 /* CalculatorLogic.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		127600ED274E1AC500F32244 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				126E038B273BA0C300EE89BC /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		2738F60B95D51B4DC3C0C248 /* Pods */ = {
@@ -80,7 +107,6 @@
 				6BDA269AD7874BE363DD5B29 /* Pods-Calculator.debug.xcconfig */,
 				521FBEF2F7F9F2107A71AB01 /* Pods-Calculator.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -207,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				127600EA274E1A6000F32244 /* CalculatorLogic.swift in Sources */,
 				126E038C273BA0C300EE89BC /* ViewController.swift in Sources */,
 				126E0388273BA0C300EE89BC /* AppDelegate.swift in Sources */,
 				126E038A273BA0C300EE89BC /* SceneDelegate.swift in Sources */,
